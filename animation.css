@@ -1,0 +1,81 @@
+/* Full page background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #ffb6d9, #ff80c0);
+    overflow: hidden;
+}
+
+/* Sparkling Background Animation */
+.sparkles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.imgur.com/dXbM0TI.png');
+    background-size: cover;
+    animation: sparkleMove 6s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes sparkleMove {
+    0% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.1) translateY(-20px); }
+    100% { transform: scale(1) translateY(0); }
+}
+
+/* Center Card */
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Title Style */
+.title {
+    font-size: 36px;
+    font-family: "Brush Script MT", cursive;
+    color: #ff1493;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ff4da6; }
+    50% { text-shadow: 0 0 25px #ff1a8c; }
+    100% { text-shadow: 0 0 10px #ff4da6; }
+}
+
+/* Message Text */
+.message {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Flower Decoration */
+.flowers {
+    margin-top: 20px;
+    font-size: 30px;
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
