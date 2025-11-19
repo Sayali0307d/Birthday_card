@@ -1,1 +1,27 @@
 adding txt file because alredy have add html,css js nd this is for GitHub practice
+
+* paste after Dependencies *
+<build>
+<plugins>
+<plugin>
+<groupId>org.codehaus.mojo</groupId>
+<artifactId>exec-maven-plugin</artifactId>
+<version>3.0.0</version>
+<executions>
+<execution>
+<goals>
+<goal>java</goal>
+</goals>
+</execution>
+</executions>
+<configuration>
+<mainClass>com.example.App</mainClass>
+</configuration>
+</plugin>
+</plugins>
+</build> I
+</project>
+
+# mvn exec:java
+# mvn package
+# java -jar target/myapp-1.0-SNAPSHOT.jar
