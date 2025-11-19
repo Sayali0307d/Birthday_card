@@ -1,6 +1,12 @@
 adding txt file because alredy have add html,css js nd this is for GitHub practice
 
-* paste after Dependencies *
+* paste after url*
+<properties>
+<maven.compiler.source>8</maven.compiler.source>
+<maven.compiler.target>8</maven.compiler.target>
+</properties>
+
+* paste after Dependencies close </dependencies>after this *
 <build>
 <plugins>
 <plugin>
